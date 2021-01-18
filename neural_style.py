@@ -31,8 +31,8 @@ parser.add_argument("-learning_rate", type=float, default=1e0)
 parser.add_argument("-lbfgs_num_correction", type=int, default=100)
 
 # Output options
-parser.add_argument("-print_iter", type=int, default=50)
-parser.add_argument("-save_iter", type=int, default=0)
+parser.add_argument("-print_iter", type=int, default=100)
+parser.add_argument("-save_iter", type=int, default=500)
 parser.add_argument("-output_image", default='out.png')
 
 # Other options
