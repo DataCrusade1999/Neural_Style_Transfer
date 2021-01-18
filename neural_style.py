@@ -466,7 +466,7 @@ class StyleLoss(nn.Module):
             elif self.target.nelement() == 0:
                 self.target = self.G.detach().mul(self.blend_weight)
             else:
-                self.target = self.target.add(self.blend_weight, self.G.detach())
+                self.target = self.target.add(self.blend_weight, self.G.detach())  
         elif self.mode == 'loss':
             loss = self.crit(self.G, self.target)
             if self.normalize:
